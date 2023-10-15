@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator🧮</title>
+
+    <style>
+      form:hover {
+        background-color: aqua;
+      }
+      h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+    </style>
+
+
+    
+    <script lang="javascript">
+      function add(){
+          var a = parseFloat(f1.fname.value);
+          var b = parseFloat(f1.lname.value);
+          var c = a+b;
+          f1.final.value = c;
+      }
+
+      function sub(){
+          var a = parseFloat(f1.fname.value);
+          var b = parseFloat(f1.lname.value);
+          var c = a-b;
+          f1.final.value = c;
+      }
+
+      function mul(){
+          var a = parseFloat(f1.fname.value);
+          var b = parseFloat(f1.lname.value);
+          var c = a*b;
+          f1.final.value = c;
+      }
+
+      function div(){
+          var a = parseFloat(f1.fname.value);
+          var b = parseFloat(f1.lname.value);
+          var c = a/b;
+          f1.final.value = c;
+      }
+    </script>
+  </head>
+  <body bgcolor="yellow" topmargin="200px">
+    <center>
+        <h1>🧮MATHS🧠</h1>
+      <form name="f1">
+        Enter the First number : <input type="text" name="fname" />
+        <br />
+        <br />
+        Enter the Second number : <input type="text" name="lname" />
+        <br />
+        <br />
+        Final Result : <input type="text" name="final" />
+        <br />
+        <br />
+        <input
+          type="button"
+          value="Addition"
+          style="color: rgb(255, 1, 1)"
+          onclick="add();"
+        />
+        <input
+          type="button"
+          value="Subtraction"
+          style="color: red"
+          onclick="sub();"
+        />
+        <input
+          type="button"
+          value="Multiplication"
+          style="color: red"
+          onclick="mul();"
+        />
+        <input
+          type="button"
+          value="Division"
+          style="color: red"
+          onclick="div();"
+        />
+      </form>
+    </center>
+  </body>
+</html>
